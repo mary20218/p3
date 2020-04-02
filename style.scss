@@ -1,0 +1,246 @@
+/*****variables de couleur******/
+
+$background_color_menu1: rgb(255, 227, 227);
+$background-color_menu2: rgb(252, 247, 250);
+$background-color_menu3: rgb(250, 243, 243);
+$background-color_menu4: rgb(255, 249, 249);
+$couleur_menu_lechic:rgb(247, 158, 25);
+$couleur_menu_lanote : rgb(53, 22, 1);
+$couleur_menu_palettes :rgb(127, 228, 81);
+$couleur_menu_papilles: rgb(29, 144, 211);
+$couleur_footer_header: rgb(60, 141, 114);
+$couleur_logo: rgb(241, 201, 67);
+
+body{
+    margin:auto;
+    width: 100%;
+}
+header{
+    background-color:$couleur_footer_header;
+    width: 100%;
+    text-align: center;
+    height: 120px;
+    color: $couleur_logo;
+    font-size: 2rem;
+    font-family: 'Montserrat' ;
+    font-weight: bold;
+    line-height: 120px;
+    h1{
+        margin-top:0;
+    }
+    }
+    /***********************************************mixins************************************************/
+    .menu_page_principale  {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 1.8rem;
+        box-shadow: 2px 2px 12px rgb(184, 184, 184);
+        min-width: 450px;
+        min-height: 600px;
+    }
+    .quatre_menus{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin:100px 100px 50px 100px;
+    }
+    a{
+        text-decoration: none;
+        color:$couleur_logo;
+    }
+    .scale{
+        margin-top:150px;
+        transition-property : transform;
+        transition-duration : 0.5s;
+        transition-timing-function : ease-out;
+    }
+    .scale:hover{
+            transform: scale(1.2);
+    }
+    .scale{
+            opacity: 1;
+            transition: .3s ease-in-out;}
+    .scale:hover{
+            opacity: .5;
+           
+        }
+        .menu1{
+            @extend.menu_page_principale;}
+            .menu1{
+            background-color: $background_color_menu1 ;
+            
+                h2{
+                margin-top: 20px;
+                color:$couleur_menu_lanote;
+                font-family: 'Devonshire';
+                font-weight: lighter;
+                }
+            span{
+                color:$couleur_menu_lanote;
+                font-family: 'Kalam';
+                font-weight: bold;
+                font-size: 2.5rem;
+               }
+            }
+            .menu2{
+                @extend.menu_page_principale;}
+                .menu2{
+                 background-color: $background-color_menu2;
+                h2{
+                    margin-top: 200px;
+                    background:  linear-gradient(to right, rgb(255, 136, 0) , rgb(204, 75, 255));
+                    -webkit-background-clip: text;
+                   -webkit-text-fill-color: transparent;
+                    font-family: 'Sofia';
+                    }
+                span{
+                    color:$couleur_menu_lechic;
+                    font-size: 3rem;
+                    font-weight: bold;
+                    }
+                }
+                .menu3{
+                  @extend.menu_page_principale;}
+                    .menu3{
+                     background-color: $background-color_menu3;
+                    h2{
+                        margin-top: 200px;
+                        background:linear-gradient(-225deg, rgb(46, 68, 194) 0%, #6297DB 48%, #1EECFF 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-family: 'Dancing Script';
+                    }
+                    span{
+                        color:$couleur_menu_papilles;
+                    }
+                }
+                .menu4{
+                    @extend.menu_page_principale;}
+                    .menu4{
+                       background-color: $background-color_menu4;
+                    h2{
+                        margin-top: 240px;
+                        background: linear-gradient(to right, #197538 0%, #b4ee47 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-family: 'Kaushan Script';
+                    }
+                    span{
+                        color:$couleur_menu_palettes;
+                    }
+                }
+                #prochainement{
+                    background-color:$couleur_footer_header;
+                    width: 400px;
+                    height:90px;
+                    text-align: center;
+                    color:$couleur_logo;
+                    font-size: 2.5rem;
+                    border-radius:15px 15px;
+                    
+                    margin-left:550px;
+                    position: absolute;
+                    }
+                    
+                     #points_suspensions span {
+                        font-size: 150px;
+                        animation-name: blink;
+                        animation-duration: 1.4s;
+                        animation-iteration-count: infinite;
+                        animation-fill-mode: both;
+                        color:$couleur_logo;
+                        border-radius: 50%;
+                        max-height: 50px;
+                        position: relative;
+                       }
+                       #points_suspensions{
+                           
+                           left:690px;
+                          
+                       }
+                         #points_suspensions span:nth-child(2) {
+                            animation-delay: .4s;
+                          }
+                         #points_suspensions span:nth-child(3) {
+                            animation-delay: .6s;
+                          }
+                          @keyframes blink {
+                            0% {
+                              opacity: .2;
+                            }
+                            20% {
+                              opacity: 1;
+                            }
+                            100% {
+                              opacity: .2;
+                            }
+                          }
+                          footer{
+                            justify-content: space-between;
+                            color:$couleur_logo;
+                            display: flex;
+                            background-color:$couleur_footer_header;
+                            height: 100px;
+                            margin-top:50px;
+                            font-size: 2.3rem;
+                            position: fixed;
+                            z-index: 1500;
+                            bottom: 0;
+                            width: 100%;
+                        }
+                        #mentions_legales{
+                            margin-left:40px;
+                            line-height: 105px;
+                        }
+                        
+                        #mentions_legales:hover{
+                        
+                             
+                                /* Start the shake animation and make the animation last for 0.5 seconds */
+                                animation: shake 0.5s;
+                              
+                                /* When the animation is finished, start again */
+                                animation-iteration-count: infinite;}
+                              
+                              
+                              @keyframes shake {
+                                0% { transform: translate(1px, 1px) rotate(0deg); }
+                                10% { transform: translate(-1px, -2px) rotate(-1deg); }
+                                20% { transform: translate(-3px, 0px) rotate(1deg); }
+                                30% { transform: translate(3px, 2px) rotate(0deg); }
+                                40% { transform: translate(1px, -1px) rotate(1deg); }
+                                50% { transform: translate(-1px, 2px) rotate(-1deg); }
+                                60% { transform: translate(-3px, 1px) rotate(0deg); }
+                                70% { transform: translate(3px, 1px) rotate(-1deg); }
+                                80% { transform: translate(-1px, -1px) rotate(1deg); }
+                                90% { transform: translate(1px, 2px) rotate(0deg); }
+                                100% { transform: translate(1px, -2px) rotate(-1deg); }
+                              }
+                        #contactez_nous{
+                            margin-right: 40px;
+                            line-height: 105px;
+                           }
+                        #contactez_nous:hover{
+                        
+                            /* Start the shake animation and make the animation last for 0.5 seconds */
+                            animation: shake 0.5s;
+                              
+                            /* When the animation is finished, start again */
+                            animation-iteration-count: infinite;}
+                          
+                          
+                          @keyframes shake {
+                            0% { transform: translate(1px, 1px) rotate(0deg); }
+                            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+                            20% { transform: translate(-3px, 0px) rotate(1deg); }
+                            30% { transform: translate(3px, 2px) rotate(0deg); }
+                            40% { transform: translate(1px, -1px) rotate(1deg); }
+                            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+                            60% { transform: translate(-3px, 1px) rotate(0deg); }
+                            70% { transform: translate(3px, 1px) rotate(-1deg); }
+                            80% { transform: translate(-1px, -1px) rotate(1deg); }
+                            90% { transform: translate(1px, 2px) rotate(0deg); }
+                            100% { transform: translate(1px, -2px) rotate(-1deg); }
+                          
+                          }
+                        
