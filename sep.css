@@ -1,0 +1,26 @@
+.separation_menu_lanote{
+    position: absolute;}
+   
+.prelude1{
+        position: relative;
+        width: 23%;
+        height: 4px;
+        background-color: black;
+        left:7%;
+    }
+        
+        .prelude2{
+            position: relative;
+            font-weight: bold;
+            width:20% ;
+        }
+        .prelude3{
+            position: relative;
+            height: 4px;
+            background-color: black;
+            left:46%;
+            width: 23%;
+            top:-30%;
+            
+            }
+        
