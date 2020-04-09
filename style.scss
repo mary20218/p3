@@ -30,15 +30,6 @@ header {
     line-height: 100px;
   }
 }
-/***********************************************extensions************************************************/
-.menu_page_principale {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 1.8rem;
-  box-shadow: 2px 2px 12px rgb(184, 184, 184);
-  min-width: 450px;
-  min-height: 600px;
-}
 
 /***************************************************************/
 
@@ -46,14 +37,19 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 100px 100px 50px 100px;
+  margin:10%;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+  
+  
 }
 a {
   text-decoration: none;
   color: $couleur_logo;
 }
 .scale {
-  margin-top: 150px;
+  
   transform: scale(1);
   transition: transform 600ms;
 
@@ -69,30 +65,51 @@ a {
   }
 }
 .menu1 {
-  @extend.menu_page_principale;
-}
-.menu1 {
+  text-align: center;
+  font-size: 1.8rem;
+  box-shadow: 2px 2px 12px rgb(184, 184, 184);
   background-color: $background_color_menu1;
+  width: 42%;
+  height:650px;
+  margin-bottom: 5%;
+  @media only screen and (max-width: 600px){
+    width: 100%;
+    max-height: 500px;
+  }
+ 
+ 
 
   h2 {
-    margin-top: 20px;
+    margin-top: 2%;
     color: $couleur_menu_lanote;
     font-weight: lighter;
     font-family: "Devonshire";
   }
   span {
     color: $couleur_menu_lanote;
-    font: bold 2.5rem "Kalam";
+    font-size: 2.5rem;
     font-weight: bold;
+    font-family: "Kalam";
+  }
+  img{
+    margin-top: 30%;
   }
 }
 .menu2 {
-  @extend.menu_page_principale;
-}
-.menu2 {
+  text-align: center;
+  font-size: 1.8rem;
+  box-shadow: 2px 2px 12px rgb(184, 184, 184);
   background-color: $background-color_menu2;
+  margin-bottom: 5%;
+  height:650px;
+  width: 42%;
+  @media only screen and (max-width: 600px){
+    width: 100%;
+    max-height: 500px;
+  }
+  
   h2 {
-    margin-top: 200px;
+    margin-top: 40%;
     background-image: linear-gradient(
       to right,
       rgb(255, 136, 0),
@@ -109,12 +126,22 @@ a {
   }
 }
 .menu3 {
-  @extend.menu_page_principale;
-}
-.menu3 {
+  text-align: center;
+  font-size: 1.8rem;
+  box-shadow: 2px 2px 12px rgb(184, 184, 184);
   background-color: $background-color_menu3;
+  height:650px;
+  width: 42%;
+  margin-bottom: 5%;
+  @media only screen and (max-width: 600px){
+    width: 100%;
+    max-height: 500px;
+  }
+
+  
+  
   h2 {
-    margin-top: 200px;
+    margin-top: 40%;
     background: linear-gradient(
       -225deg,
       rgb(46, 68, 194) 0%,
@@ -130,12 +157,22 @@ a {
   }
 }
 .menu4 {
-  @extend.menu_page_principale;
-}
-.menu4 {
+  text-align: center;
+  font-size: 1.8rem;
+  box-shadow: 2px 2px 12px rgb(184, 184, 184);
   background-color: $background-color_menu4;
+  height:650px;
+  width: 42%;
+  margin-bottom: 5%;
+  @media only screen and (max-width: 600px){
+    width: 100%;
+    max-height: 500px;
+  }
+
+  
+  
   h2 {
-    margin-top: 240px;
+    margin-top: 45%;
     background: linear-gradient(to right, #197538 0%, #b4ee47 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -249,30 +286,37 @@ footer {
   box-shadow: 2px 2px 12px rgb(184, 184, 184);
   padding-bottom: 5%;
   ul {
-    margin-left: 5%;
-  }
+    margin-left: 5%;}
+    
   &__titre {
     text-align: center;
+  }
+  }
+.main_page2__article1{
+  li{
+    display: flex;
+    justify-content: space-around;
+    
   }
 
   #note_enchantee {
     margin: auto;
     margin-top: 5%;
-  }
-}
+  }}
+
 .separation1,
 .separation2,
 .separation3 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
+  width: 90%;
   margin: auto;
   text-align: center;
 }
 .prelude1,
 .prelude3 {
-  width: 25%;
+  width: 35%;
   height: 4px;
   background-color: $couleur_menu_lanote;
 }
@@ -292,28 +336,24 @@ h3:hover::after {
 .details_menu {
   width: 80%;
   text-align: left;
+  margin-top: 0;
 }
 .prix {
   width: 20%;
   text-align: right;
   margin-right: 8%;
+  margin-top: 0;
 }
 
-.li_menu_lanote {
-  display: flex;
-  justify-content: space-around;
-}
+
+
 .bas_de_page {
   display: inline-flex;
   margin-left: 35%;
   max-height: 100px;
   padding-top: 3%;
 }
-.main_page2__article3 {
-  .li_menu_lanote {
-    flex-direction: column;
-  }
-}
+
 /******************************page3***********************************/
 .main_page3 {
   background-color: $background-color_menu2;
@@ -323,8 +363,9 @@ h3:hover::after {
 
   &__titre {
     text-align: center;
-    padding-top: 100px;
-    font: 3.5rem "Sofia";
+    padding-top: 10%;
+    font-size: 3.5rem;
+    font-family: "Sofia";
     background-image: linear-gradient(
       to right,
       rgb(255, 136, 0),
@@ -335,8 +376,10 @@ h3:hover::after {
     -webkit-text-fill-color: transparent;
   }
   ul {
-    margin-left: 5%;
+    margin-left: 7%;
+   
   }
+
   h3::after {
     content: "";
     display: block;
@@ -359,13 +402,13 @@ h3:hover::after {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
+  width: 90%;
   margin: auto;
   text-align: center;
 }
 .chic1,
 .chic3 {
-  width: 25%;
+  width: 35%;
   height: 4px;
   background: linear-gradient(to right, rgb(255, 136, 0), rgb(204, 75, 255));
   background-clip: text;
@@ -373,23 +416,32 @@ h3:hover::after {
 }
 
 .ul_lechic_1 {
+  
+
   li {
     display: flex;
     justify-content: space-around;
     color: rgb(255, 136, 0);
     font-size: 1.5rem;
-  }
-}
+  
+  
+}}
 .ul_lechic_2 {
+ 
+   
+
   li {
     display: flex;
     justify-content: space-around;
     color: rgb(138, 113, 150);
     font-size: 1.5rem;
-  }
-}
+  
+  
+}}
 
 .ul_lechic_3 {
+
+  
   .details_menu {
     width: 100%;
   }
@@ -467,13 +519,13 @@ h3:hover::after {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
+  width: 90%;
   margin: auto;
   text-align: center;
 }
 .papilles1,
 .papilles3 {
-  width: 25%;
+  width: 35%;
   height: 4px;
 }
 .separation1_page4 > .papilles1,
@@ -497,7 +549,8 @@ h3:hover::after {
     width: 100%;
   }
   ul {
-    margin: 0;
+    margin-left: 5%;
+    
   }
 }
 /*******************************************page5**************************************/
@@ -506,12 +559,11 @@ h3:hover::after {
   font-family: "Kalam";
   font-size: 1.5rem;
   padding-bottom: 100px;
-  margin:10%;
+  margin: 10%;
+  box-shadow: 2px 2px 12px rgb(184, 184, 184);
 
   h2 {
-    padding-top: 100px;
     text-align: center;
-    padding-bottom: 100px;
     font-size: 5rem;
     background-image: linear-gradient(
       to right,
@@ -521,7 +573,105 @@ h3:hover::after {
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     font-family: "Kaushan Script";
+    padding-top: 100px;
   }
+  li {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  ul {
+    margin-left: 5%;
+    
+  }
+}
+.page5 {
+  h3::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    transition: width 0.5s ease;
+  }
+
+  h3:hover::after {
+    width: 100%;
+
+    background-image: linear-gradient(
+      to right,
+      rgb(48, 122, 5),
+      rgb(156, 245, 161)
+    );
+  }
+}
+
+.separation1_page5 > .esquisse1,
+.esquisse3 {
+  background-image: linear-gradient(
+    to right,
+    rgb(48, 122, 5),
+    rgb(156, 245, 161)
+  );
+  height: 4px;
+  width: 35%;
+}
+
+.separation2_page5 > .esquisse1,
+.esquisse3 {
+  background-image: linear-gradient(
+    to right,
+    rgb(48, 122, 5),
+    rgb(156, 245, 161)
+  );
+  height: 4px;
+  width: 35%;
+}
+.separation3_page5 > .esquisse1,
+.esquisse3 {
+  background-image: linear-gradient(
+    to right,
+    rgb(48, 122, 5),
+    rgb(156, 245, 161)
+  );
+  height: 4px;
+  width: 35%;
+}
+.separation1_page5,
+.separation2_page5,
+.separation3_page5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+/***************************************mentions légales************************************/
+.page_mentions_legales {
+  margin: 10%;
+  font-size: 20px;
+}
+/*****************************************media queries*****************************/
+@media only screen and (max-width: 600px){
+  .main_page2 ul, .main_page3 ul,.page5 ul{
+    padding-left:0;
+    margin-left:0;
+  }
+  .main_page2 li,.page4__article li,.ul_lechic_1 li, .ul_lechic_2 li, .ul_lechic_3 li,.page5 li{
+    flex-direction: column;
+  }
+  .details_menu, .prix{
+    width: 100%;
+    text-align: center;
+  }
+  #note_enchantee, .bas_de_page{
+    display: none;
+  }
+  .page4__article ul{
+    padding-left:0;
+    margin-left:0;
+  }
+  
 }
