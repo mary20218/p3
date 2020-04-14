@@ -590,7 +590,8 @@ ul {
   .main_page3 > h2,
   .main_page4 > h2,
   .main_page5 > h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding-top: 5%;
   }
   li {
     -webkit-box-orient: vertical;
@@ -618,6 +619,10 @@ ul {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     text-align: center;
+    font-weight: bold;
+  }
+  #note_enchantee, #prochainement {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
