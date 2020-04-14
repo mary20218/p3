@@ -78,29 +78,7 @@ a {
     max-height: 500px;
   }
 }
-@mixin media_queries{
-  @media only screen and (max-width: 600px){
-    margin-bottom:35%;
-    padding-bottom:0;
 
-    h2{
-      font-size:2rem;
-      padding-top:5%;
-    }
-   
-    li{
-      flex-direction:column;
-    }
-    .details_menu, .prix{
-      width:100%;
-      text-align: center;
-    }
-    ul{
-      margin-left:0;
-      padding-left:0;
-    }
-  }
-}
 /**************************************************************************************/
 .menu--lanote {
   @extend %menu;
@@ -170,7 +148,6 @@ a {
   background-color: $background-color_menu4;
   @media only screen and (max-width: 600px) {
     margin-bottom: 35%;
-    
   }
   &__titre {
     margin-top: 45%;
@@ -184,7 +161,6 @@ a {
 .legout {
   color: $couleur_menu_palettes;
   font-size: 3rem;
-  
 }
 #prochainement {
   background-color: $couleur_footer_header;
@@ -197,8 +173,8 @@ a {
   margin-left: 32%;
   margin-bottom: 15%;
   line-height: 30px;
-  @media only screen and (max-width: 600px){
-    display:none;
+  @media only screen and (max-width: 600px) {
+    display: none;
   }
 }
 #prochainement span {
@@ -282,7 +258,6 @@ footer {
 
 /**************************************************************/
 .main_page2 {
-  @include media_queries;
   background-color: $background_color_menu1;
   font-family: "Kalam";
   font-size: 1.5rem;
@@ -294,7 +269,6 @@ footer {
   &__titre {
     text-align: center;
   }
-  
 }
 #note_enchantee {
   margin: auto;
@@ -305,8 +279,8 @@ footer {
   margin-left: 35%;
   max-height: 100px;
   padding-top: 3%;
-  @media only screen and (max-width: 600px){
-    display:none;
+  @media only screen and (max-width: 600px) {
+    display: none;
   }
 }
 .main_page2 .sep_com1 {
@@ -361,12 +335,10 @@ li {
 }
 ul {
   margin-left: 5%;
-  
 }
 
 /******************************page3***********************************/
 .main_page3 {
-  @include media_queries;
   background-color: $background-color_menu2;
   margin: 10%;
   box-shadow: 2px 2px 12px rgb(184, 184, 184);
@@ -386,7 +358,6 @@ ul {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
- 
 }
 .main_page3__article1 {
   color: $couleur_menu_lechic;
@@ -421,7 +392,6 @@ ul {
 
 /****************************************page4***********************/
 .main_page4 {
-  @include media_queries;
   background-color: $background-color_menu3;
   font-family: "Kalam";
   font-size: 1.5rem;
@@ -444,7 +414,6 @@ ul {
     -webkit-text-fill-color: transparent;
     font-family: "Dancing Script";
   }
-  
 }
 .main_page4__article1 .sep_com1 {
   background: $couleur_papilles1;
@@ -473,8 +442,6 @@ ul {
 
 /*******************************************page5**************************************/
 .main_page5 {
-  @include media_queries;
-
   background-color: $background-color_menu3;
   font-family: "Kalam";
   font-size: 1.5rem;
@@ -494,8 +461,8 @@ ul {
     -webkit-text-fill-color: transparent;
     font-family: "Kaushan Script";
     padding-top: 100px;
- 
-  }}
+  }
+}
 .main_page5__article .sep_com1 {
   background: linear-gradient(to right, rgb(48, 122, 5), rgb(156, 245, 161));
 }
@@ -506,3 +473,35 @@ ul {
   font-size: 20px;
 }
 
+@media (max-width: 600px) {
+  .main_page2,
+  .main_page3,
+  .main_page4,
+  .main_page5 {
+    margin-bottom: 35%;
+    padding-bottom: 0;
+  }
+  .main_page2 > h2,
+  .main_page3 > h2,
+  .main_page4 > h2,
+  .main_page5 > h2 {
+    font-size: 2rem;
+  }
+
+  li {
+    flex-direction: column;
+  }
+  .details_menu,
+  .prix {
+    width: 100%;
+    text-align: center;
+  }
+  .prix {
+    font-weight: bold;
+  }
+
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
