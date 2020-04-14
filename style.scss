@@ -487,7 +487,6 @@ ul {
   .main_page5 > h2 {
     font-size: 2rem;
   }
-
   li {
     flex-direction: column;
   }
@@ -499,9 +498,16 @@ ul {
   .prix {
     font-weight: bold;
   }
-
   ul {
     margin-left: 0;
     padding-left: 0;
+  }
+  #mentions_legales,
+  #contactez_nous {
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 0;
+    justify-content: space-around;
+    text-align: center;
   }
 }

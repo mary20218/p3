@@ -610,5 +610,14 @@ ul {
     margin-left: 0;
     padding-left: 0;
   }
+  #mentions_legales,
+  #contactez_nous {
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
