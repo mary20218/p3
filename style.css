@@ -91,6 +91,12 @@ a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu--lanote, .menu--lechic, .menu--papilles, .menu--legout {
+    max-height: 500px;
+  }
+}
+
 /**************************************************************************************/
 .menu--lanote {
   background-color: #ffe3e3;
@@ -193,6 +199,12 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+  #prochainement {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   #prochainement {
     display: none;
   }
@@ -621,7 +633,7 @@ ul {
     text-align: center;
     font-weight: bold;
   }
-  #note_enchantee, #prochainement {
+  #note_enchantee {
     display: none;
   }
 }
