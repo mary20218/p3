@@ -28,7 +28,7 @@ header {
   margin: 10% 10% 0% 10%;
   @media #{$small-screen} {
     flex-direction: column;
-    margin-bottom: 2%;
+    margin-bottom: 20%;
   }
   @media #{$large-screen} {
     margin-bottom: 20%;
