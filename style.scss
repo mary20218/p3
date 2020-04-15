@@ -1,25 +1,9 @@
-/*****variables de couleur******/
-
-$background_color_menu1: rgb(255, 227, 227);
-$background-color_menu2: rgb(252, 247, 250);
-$background-color_menu3: rgb(250, 243, 243);
-$background-color_menu4: rgb(255, 249, 249);
-$couleur_menu_lechic: rgb(247, 158, 25);
-$couleur_lechic2: rgb(94, 38, 94);
-$couleur_lechic3: rgb(87, 31, 243);
-$couleur_menu_lanote: rgb(53, 22, 1);
-$couleur_menu_palettes: rgb(127, 228, 81);
-$couleur_menu_papilles: rgb(29, 144, 211);
-$couleur_footer_header: rgb(60, 141, 114);
-$couleur_logo: rgb(241, 201, 67);
-$couleur_papilles1: rgb(46, 68, 194);
-$couleur_papilles2: #6297db;
-$couleur_papilles3: #1eecff;
+@import "./utils/variables";
 
 body {
-  margin: 0;
+  margin: auto;
   width: 100%;
-  height: 100%;
+  
 }
 header {
   background-color: $couleur_footer_header;
@@ -40,7 +24,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 10%;
+  margin: 10% 10% auto 10%;
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     margin-bottom: 2%;
@@ -77,11 +61,11 @@ a {
     width: 100%;
     max-height: 500px;
   }
-  @media (min-width:768px)and (max-width:1024px){
-    max-height: 500px;
+  @media only screen and (min-width: 768px) and (max-width: 1024px){
+    max-height: 550px;
   }
 }
-
+  
 /**************************************************************************************/
 .menu--lanote {
   @extend %menu;
@@ -174,13 +158,13 @@ a {
   font-size: 2.5rem;
   border-radius: 15px 15px;
   margin-left: 32%;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
   line-height: 30px;
   @media only screen and (max-width: 600px) {
     display: none;
   }
-  @media only screen and (min-width:768px)and (max-width:1024px){
-    display:none;
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    display: none;
   }
 }
 #prochainement span {
@@ -188,7 +172,6 @@ a {
   animation-name: blink;
   animation-duration: 1.4s;
   animation-iteration-count: infinite;
-  animation-fill-mode: both;
   color: $couleur_logo;
   border-radius: 50%;
 }
@@ -518,7 +501,16 @@ ul {
     text-align: center;
     font-weight: bold;
   }
-  #note_enchantee{
+  #note_enchantee {
     display: none;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main_page2,
+  .main_page3,
+  .main_page4,
+  .main_page5 {
+    margin-bottom: 15%;
+    padding-bottom: 0;
+  }}
+
