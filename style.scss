@@ -24,7 +24,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 10% 10% auto 10%;
+  margin: 10% 10% 0% 10%;
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     margin-bottom: 2%;
@@ -512,5 +512,8 @@ ul {
   .main_page5 {
     margin-bottom: 15%;
     padding-bottom: 0;
-  }}
+  }
+.quatre_menus{
+  margin-bottom:10%;
+}}
 
