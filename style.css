@@ -288,13 +288,9 @@ footer {
     -webkit-transform: translate(2px, 0);
             transform: translate(2px, 0);
   }
-  50% {
+  100% {
     -webkit-transform: translate(-2px, 0);
             transform: translate(-2px, 0);
-  }
-  100% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
   }
 }
 
@@ -303,13 +299,9 @@ footer {
     -webkit-transform: translate(2px, 0);
             transform: translate(2px, 0);
   }
-  50% {
+  100% {
     -webkit-transform: translate(-2px, 0);
             transform: translate(-2px, 0);
-  }
-  100% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
   }
 }
 
@@ -319,24 +311,20 @@ footer {
 }
 
 #contactez_nous:hover {
-  -webkit-animation: wiggle 125ms infinite;
-          animation: wiggle 125ms infinite;
+  -webkit-animation: wiggle 105ms infinite;
+          animation: wiggle 105ms infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
 
 @keyframes wiggle {
   0% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
-  }
-  50% {
-    -webkit-transform: translate(-2px, 0);
-            transform: translate(-2px, 0);
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
   }
   100% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
   }
 }
 
@@ -404,8 +392,8 @@ h3::after {
   display: block;
   height: 2px;
   width: 0;
-  -webkit-transition: width 0.5s ease;
-  transition: width 0.5s ease;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 
 h3:hover::after {
@@ -634,7 +622,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
   .main_page2,
   .main_page3,
   .main_page4,
