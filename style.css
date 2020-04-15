@@ -89,7 +89,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
   .menu--lanote, .menu--lechic, .menu--papilles, .menu--legout {
     max-height: 550px;
   }
@@ -202,7 +202,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
   #prochainement {
     display: none;
   }
@@ -622,7 +622,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
   .main_page2,
   .main_page3,
   .main_page4,
