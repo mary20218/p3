@@ -649,6 +649,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .main_page4__titre {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .main_page4 {
     margin-bottom: 35%;
@@ -713,6 +719,13 @@ ul {
   .main_page5__titre {
     padding-top: 5%;
     font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .main_page5__titre {
+    margin-bottom: 0;
+    padding-top: 0;
   }
 }
 
