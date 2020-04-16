@@ -1,0 +1,86 @@
+.main_page3 {
+    background-color: $background-color_menu2;
+    margin: 10%;
+    box-shadow: 2px 2px 12px rgb(184, 184, 184);
+    padding-bottom: 15%;
+    &__titre {
+      text-align: center;
+      padding-top: 10%;
+      font-size: 3.5rem;
+      font-family: "Sofia";
+      background-image: linear-gradient(
+        to right,
+        rgb(255, 136, 0),
+        rgb(87, 31, 243)
+      );
+  
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @media #{$small-screen} {
+        padding-top: 5%;
+        font-size: 2.5rem;
+      }
+    }
+    @media #{$small-screen} {
+      margin-bottom: 35%;
+      padding-bottom: 0;
+    }
+    @media #{$large-screen} {
+      margin-bottom: 25%;
+      padding-bottom: 0;
+    }
+  }
+  .main_page3__article1 {
+    color: $couleur_menu_lechic;
+    & .sep_com1 {
+      background-color: $couleur_menu_lechic;
+    }
+    & h3:hover::after {
+      background: $couleur_menu_lechic;
+    }
+  }
+  .main_page3__article2 {
+    color: $couleur_lechic2;
+    & .sep_com1 {
+      background-color: $couleur_lechic2;
+    }
+    & h3:hover::after {
+      background: $couleur_lechic2;
+    }
+  }
+  .main_page3__article3 {
+    color: $couleur_lechic3;
+    & .sep_com1 {
+      background: $couleur_lechic3;
+    }
+    & h3:hover::after {
+      background: $couleur_lechic3;
+    }
+  }
+  .main_page3 .sep_com__titre {
+    font-size: 1.4rem;
+  }
+  .menu--lechic {
+    @extend %menu;
+    background-color: $background-color_menu2;
+    &__titre {
+      margin-top: 40%;
+      background-image: linear-gradient(
+        to right,
+        rgb(255, 136, 0),
+        rgb(87, 31, 243)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "Sofia";
+      margin-bottom: 0;
+      @media #{$large-screen} {
+        font-size: 2rem;
+      }
+    }
+  }
+  .lechic {
+    color: $couleur_menu_lechic;
+    font-weight: bolder;
+    font: 3rem "Arial";
+  }

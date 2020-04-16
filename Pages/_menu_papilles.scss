@@ -1,0 +1,88 @@
+.main_page4 {
+    background-color: $background-color_menu3;
+    font-family: "Kalam";
+    font-size: 1.5rem;
+    margin: 10%;
+    box-shadow: 2px 2px 12px rgb(184, 184, 184);
+    padding-bottom: 20%;
+    &__titre {
+      padding-top: 10%;
+      text-align: center;
+      font-size: 5rem;
+      background-image: linear-gradient(
+        to right,
+        rgb(37, 34, 221),
+        $couleur_papilles3
+      );
+  
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "Dancing Script";
+      @media #{$small-screen} {
+        padding-top: 5%;
+        font-size: 2.5rem;
+      }
+      @media #{$large-screen} {
+        margin-bottom: 0;
+      }
+    }
+    @media #{$small-screen} {
+      margin-bottom: 35%;
+      padding-bottom: 0;
+    }
+    @media #{$large-screen} {
+      margin-bottom: 25%;
+      padding-bottom: 0;
+    }
+  }
+  .main_page4__article1 .sep_com1 {
+    background: $couleur_papilles1;
+  }
+  .main_page4__article2 .sep_com1 {
+    background: $couleur_papilles2;
+  }
+  .main_page4__article3 .sep_com1 {
+    background: $couleur_papilles3;
+  }
+  .main_page4__article1 > .sep_com {
+    h3:hover::after {
+      background: $couleur_papilles1;
+    }
+  }
+  .main_page4__article2 > .sep_com {
+    h3:hover::after {
+      background: $couleur_papilles2;
+    }
+  }
+  .main_page4__article3 > .sep_com {
+    h3:hover::after {
+      background: $couleur_papilles3;
+    }
+  }
+  .menu--papilles {
+    @extend %menu;
+    background-color: $background-color_menu3;
+    &__titre {
+      margin-top: 40%;
+      background: linear-gradient(
+        -225deg,
+        rgb(46, 68, 194) 0%,
+        #6297db 48%,
+        #1eecff 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "Dancing Script";
+      margin-bottom: 0;
+      @media #{$large-screen} {
+        font-size: 2rem;
+      }
+    }
+  }
+  .papilles {
+    color: $couleur_menu_papilles;
+    font-family: "Kalam";
+    font-size: 3rem;
+  }

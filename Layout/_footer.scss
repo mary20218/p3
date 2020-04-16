@@ -1,0 +1,63 @@
+footer {
+    justify-content: space-between;
+    color: $couleur_logo;
+    display: flex;
+    background-color: $couleur_footer_header;
+    height: 100px;
+    bottom: 0;
+    font-size: 2.3rem;
+    position: fixed;
+    z-index: 1500;
+    width: 100%;
+  }
+  #mentions_legales {
+    margin-left: 40px;
+    line-height: 105px;
+    @media #{$small-screen} {
+      width: 100%;
+      font-size: 1.5rem;
+      margin: 0;
+      justify-content: space-around;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  #mentions_legales:hover {
+    @keyframes wiggle {
+      0% {
+        transform: translate(2px, 0);
+      }
+      100% {
+        transform: translate(-2px, 0);
+      }
+    }
+  
+    animation: wiggle 125ms infinite;
+    animation-timing-function: linear;
+  }
+  #contactez_nous {
+    margin-right: 40px;
+    line-height: 105px;
+    @media #{$small-screen} {
+      width: 100%;
+      font-size: 1.5rem;
+      margin: 0;
+      justify-content: space-around;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  #contactez_nous:hover {
+    @keyframes wiggle {
+      0% {
+        transform: translate(2px, 0);
+      }
+      100% {
+        transform: translate(-2px, 0);
+      }
+    }
+  
+    animation: wiggle 105ms infinite;
+    animation-timing-function: linear;
+  }
+  

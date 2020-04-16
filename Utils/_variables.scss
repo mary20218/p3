@@ -1,3 +1,4 @@
+/*****************variables couleur*************************/
 $background_color_menu1: rgb(255, 227, 227);
 $background-color_menu2: rgb(252, 247, 250);
 $background-color_menu3: rgb(250, 243, 243);
@@ -13,5 +14,27 @@ $couleur_logo: rgb(241, 201, 67);
 $couleur_papilles1: rgb(46, 68, 194);
 $couleur_papilles2: #6297db;
 $couleur_papilles3: #1eecff;
+
+
+/*********************************variables media_queries****************************/
+
 $small-screen: "screen and (max-width: 600px)";
 $large-screen: "screen and (min-width: 601px)and (max-width:1024px)";
+
+/***********placeholders******************/
+
+%menu {
+    text-align: center;
+    font-size: 2.1rem;
+    box-shadow: 2px 2px 12px rgb(184, 184, 184);
+    width: 44%;
+    height: 650px;
+    margin-bottom: 5%;
+    @media #{$small-screen} {
+      width: 100%;
+      max-height: 500px;
+    }
+    @media #{$large-screen} {
+      max-height: 400px;
+    }
+  }
