@@ -4,7 +4,8 @@
   "description": "p3jason",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch ./style.scss:./css/style.css"
+
+    "sass":"sass --watch ./style.scss:./css/style.css --style compressed"
   },
   "repository": {
     "type": "git",
