@@ -1,5 +1,5 @@
 .menu--lanote{
-    @extend %menu;
+    @include menu;
     background-color: $background_color_menu1;
     &__titre {
       margin-top: 2%;

@@ -62,7 +62,7 @@
     }
   }
   .menu--papilles {
-    @extend %menu;
+    @include menu;
     background-color: $background-color_menu3;
     &__titre {
       margin-top: 40%;
