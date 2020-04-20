@@ -98,7 +98,7 @@ footer {
 
 #mentions_legales:hover {
   animation: wiggle 125ms infinite;
-  animation-timing-function: linear; }
+   }
 @keyframes wiggle {
   0% {
     transform: translate(2px, 0); }
@@ -118,7 +118,7 @@ footer {
 
 #contactez_nous:hover {
   animation: wiggle 105ms infinite;
-  animation-timing-function: linear; }
+  }
 @keyframes wiggle {
   0% {
     transform: translate(2px, 0); }
@@ -419,7 +419,7 @@ h3::after {
   display: block;
   height: 2px;
   width: 0;
-  transition: width 0.5s ease-in-out; }
+  transition: 0.5s ease-in-out; }
 
 h3:hover::after {
   width: 100%;
