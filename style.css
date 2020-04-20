@@ -397,17 +397,14 @@ a {
   text-decoration: none;
   color: #f1c943; }
 
-.scale {
-  transform: scale(1);
-  transition: transform 600ms; }
-  .scale:hover {
-    transform: scale(1.1); }
-
-.scale {
-  opacity: 1;
-  transition: 0.3s ease-in-out; }
-  .scale:hover {
-    opacity: 0.5; }
+  .scale {
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.3s ease-in-out; }
+    .scale:hover {
+      transform: scale(1.1); 
+      opacity: 0.5;}
+  
 
 .sep_com {
   display: flex;

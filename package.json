@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
 
-    "sass":"sass --watch ./style.scss:./css/style.css --style compressed"
+    "sass":"sass --watch style.scss:style.css --style compressed"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,5 @@
   "bugs": {
     "url": "https://github.com/mary20218/p3/issues"
   },
-  "homepage": "https://github.com/mary20218/p3#readme"
+  "homepage": "https://mary20218.github.io/p3/"
 }
