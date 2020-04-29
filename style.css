@@ -97,7 +97,7 @@ footer {
       font-weight: bold; } }
 
 #mentions_legales:hover {
-  animation: wiggle 125ms infinite;
+  animation: wiggle 105ms infinite;
    }
 @keyframes wiggle {
   0% {

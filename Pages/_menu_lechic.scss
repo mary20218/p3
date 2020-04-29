@@ -61,7 +61,7 @@
     font-size: 1.4rem;
   }
   .menu--lechic {
-    @extend %menu;
+    @include menu;
     background-color: $background-color_menu2;
     &__titre {
       margin-top: 40%;

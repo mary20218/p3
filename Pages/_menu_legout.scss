@@ -40,7 +40,7 @@
     background: linear-gradient(to right, rgb(48, 122, 5), rgb(156, 245, 161));
   }
   .menu--legout {
-    @extend %menu;
+    @include menu;
     background-color: $background-color_menu4;
     &__titre {
       margin-top: 45%;
